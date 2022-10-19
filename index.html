@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <title>PHP E JAVASCRIPT</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/index.css">
+  <!-- PNotify -->
+  <link href="plugins/pnotify/dist/pnotify.css" rel="stylesheet">
+  <link href="plugins/pnotify/dist/pnotify.buttons.css" rel="stylesheet">
+  <link href="plugins/pnotify/dist/pnotify.nonblock.css" rel="stylesheet">
+</head>
+
+<body id="fundo">
+  <div>
+    <h1 id="titulo">FALHAS DA MAQUINA X</h1>
+  </div> 
+  
+  <div class="box" id="mainbox">
+    <form action="https://api.staticforms.xyz/submit" method="POST" class="card">
+      <input type="hidden" name="accessKey" value="e89d02ee-1c2f-4138-83ed-3488a233c80c">
+      <div>
+        <div>
+          <label id="labelnome" class="labelInput">Nome completo</label>
+          <input type="text" class="form-control" placeholder="Seu nome" aria-label="Username" aria-describedby="basic-addon1" id="nomecompleto">
+          
+        </div>
+        
+        <div>
+          <label for="gmid" id="labelgmid" class="labelInput">GMIN</label>
+          <input type="text" class="form-control" placeholder="GMIN" aria-label="Username" aria-describedby="basic-addon1" id="gmid">
+          
+        </div>
+        
+        <div>
+          <label for="telefone" id="labeltelefone" class="labelInput">Telefone</label>
+          <input type="text" class="form-control" placeholder="Telefone" aria-label="With textarea" id="telefone">
+          
+        </div>
+        <div>
+          <label for="telefone" id="labeldescfalha" class="labelInput">Descrição da falha</label>
+          <textarea class:="form-control" placeholder="Descrição da falha" aria-label="With textarea" id="descfalha"></textarea>
+          
+        </div>
+        <div>
+          <label for="telefone" id="labelresolucao" class="labelInput">Resolução da falha</label>
+          <textarea class="form-control" placeholder="Resolução da falha" aria-label="With textarea" id="resolucao"></textarea>
+          
+        </div>
+        
+      </div>
+      
+      <div>
+        <button class="btn btn-primary" type="button" id="btnenviar">Enviar</button>
+      </div>
+      <a href="https://drive.google.com/file/d/1-RZ8EyvyxXXvliZaUbaCo_Nf0ltYa4Iz/view?usp=sharing" target="_blank" id="maquinapdf">Sobre a maquina X</a>
+      <img src="images/maquina.png" alt="Imagem bonita" id="imagea" >
+    </form>
+  </div>
+
+  
+  <script src="js/jquery.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/index.js"></script> 
+  <!-- PNotify -->
+  <script src="plugins/pnotify/dist/pnotify.js"></script>
+  <script src="plugins/pnotify/dist/pnotify.buttons.js"></script>
+  <script src="plugins/pnotify/dist/pnotify.nonblock.js"></script>
+</body>
+</html>

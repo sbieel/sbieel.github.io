@@ -9,7 +9,7 @@ $("#btnenviar").click(function() {
     }   
 
     if($("#gmid").val() == '') {
-        mensagem = mensagem + "Favor colocar seu email ! <br>";
+        mensagem = mensagem + "Favor colocar seu gmin ! <br>";
         validado = false;
     }  
 
@@ -69,6 +69,11 @@ function enviaremail(nomecompleto, gmid, telefone, descfalha, resolucao) {
             'Relatório enviado.',
             'success'
         );
+        $("#nomecompleto").val("");
+        $("#gmid").val("");
+        $("#telefone").val("");
+        $("#descfalha").val("");
+        $("#resolucao").val("");
     })
     .catch((error) => {
         console.log(error);
